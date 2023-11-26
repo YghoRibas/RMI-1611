@@ -1,4 +1,7 @@
-public interface Calculadora {
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface Calculadora extends Remote {
     // Método para realizar a adição
     double adicao(double num1, double num2);
 
